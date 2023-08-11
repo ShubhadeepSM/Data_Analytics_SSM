@@ -1,0 +1,137 @@
+{
+  "version" : "58.0",
+  "nodes" : {
+    "LOAD_DATASET0" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "Name", "Title__c", "created_year__c", "Video_views_Last_30_Days__c", "Youtuber__c", "created_month__c", "Category__c", "lowest_monthly_earnings__c", "Latitude__c", "Channel_Type__c", "Longitude__c", "Unemployment_rate__c", "highest_yearly_earnings__c", "Video_Views_Rank__c", "highest_monthly_earnings__c", "Channel_Type_Rank__c", "created_date__c", "Subscribers_for_last_30_Days__c", "Abbreviation__c", "lowest_yearly_earnings__c", "Country__c", "Country_Rank__c", "Urban_population__c", "Population__c", "Subscribers__c", "Rank__c", "Uploads__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "Global_YouTube_Statistics__c",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "Global_YouTube_Statistics__c"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "FILTER0" : {
+      "action" : "filter",
+      "sources" : [ "LOAD_DATASET0" ],
+      "parameters" : {
+        "filterExpressions" : [ {
+          "type" : "TEXT",
+          "field" : "Youtuber__c",
+          "operator" : "IS_NOT_NULL",
+          "operands" : [ ]
+        } ]
+      }
+    },
+    "OUTPUT0" : {
+      "action" : "save",
+      "sources" : [ "TO_DIMENSION1" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Youtube Dataset",
+          "name" : "youtube_dataset",
+          "folderName" : "SharedApp"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "TO_DIMENSION0" : {
+      "action" : "typeCast",
+      "sources" : [ "FILTER0" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "created_year__c",
+          "newProperties" : {
+            "label" : "created_year Text",
+            "name" : "created_year_toText",
+            "typeProperties" : {
+              "type" : "TEXT",
+              "length" : 255
+            }
+          }
+        } ]
+      }
+    },
+    "TO_DIMENSION1" : {
+      "action" : "typeCast",
+      "sources" : [ "TO_DIMENSION0" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "created_date__c",
+          "newProperties" : {
+            "label" : "created_date Text",
+            "name" : "created_date_toText",
+            "typeProperties" : {
+              "type" : "TEXT",
+              "length" : 255
+            }
+          }
+        } ]
+      }
+    }
+  },
+  "ui" : {
+    "nodes" : {
+      "LOAD_DATASET0" : {
+        "label" : "Global_YouTube_Statistics__c",
+        "type" : "LOAD_DATASET",
+        "top" : 112,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "FILTER0" : {
+        "label" : "Filter 0",
+        "type" : "FILTER",
+        "top" : 112,
+        "left" : 252
+      },
+      "OUTPUT0" : {
+        "label" : "Output 0",
+        "type" : "OUTPUT",
+        "top" : 112,
+        "left" : 532
+      },
+      "TRANSFORM0" : {
+        "label" : "Transform 0",
+        "type" : "TRANSFORM",
+        "top" : 112,
+        "left" : 392,
+        "graph" : {
+          "TO_DIMENSION0" : {
+            "label" : "To Text"
+          },
+          "TO_DIMENSION1" : {
+            "label" : "To Text"
+          }
+        },
+        "connectors" : [ {
+          "source" : "TO_DIMENSION0",
+          "target" : "TO_DIMENSION1"
+        } ]
+      }
+    },
+    "connectors" : [ {
+      "source" : "LOAD_DATASET0",
+      "target" : "FILTER0"
+    }, {
+      "source" : "TRANSFORM0",
+      "target" : "OUTPUT0"
+    }, {
+      "source" : "FILTER0",
+      "target" : "TRANSFORM0"
+    } ],
+    "hiddenColumns" : [ ]
+  },
+  "runMode" : "full"
+}

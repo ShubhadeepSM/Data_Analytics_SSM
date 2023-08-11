@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dataset xsi:nil="true"/>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#00B531</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>A</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>lens_2.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#C6D3E1</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>A</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>lens_3.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#E84340</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>A</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>Earnings_of_Most_Vie_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#e16032</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>Category__c</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>lens_1.Category__c</field>
+        <isDerived>false</isDerived>
+        <sortIndex>3</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>lens_1.Country__c</field>
+        <isDerived>false</isDerived>
+        <sortIndex>4</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>rgb(227, 26, 26)</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>A</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>lens_1.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>5</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#00B531</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>B</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>lens_5.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>6</sortIndex>
+    </dimensions>
+    <dimensions>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#C6D3E1</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>Sum of Highest Yearly Earnings</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>lens_6.ALL</field>
+        <isDerived>false</isDerived>
+        <sortIndex>7</sortIndex>
+    </dimensions>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#00B531</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>A</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>lens_2.A</field>
+        <isDerived>false</isDerived>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#C6D3E1</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>A</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>lens_3.A</field>
+        <isDerived>false</isDerived>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#95FFFF</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>B</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>Earnings_of_Most_Vie_1.B</field>
+        <isDerived>false</isDerived>
+        <sortIndex>2</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#E84340</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>A</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>Earnings_of_Most_Vie_1.A</field>
+        <isDerived>false</isDerived>
+        <sortIndex>3</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>rgb(227, 26, 26)</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>A</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>lens_1.A</field>
+        <isDerived>false</isDerived>
+        <sortIndex>4</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#E84340</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>C</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>lens_5.C</field>
+        <isDerived>false</isDerived>
+        <sortIndex>5</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#00B531</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>B</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>lens_5.B</field>
+        <isDerived>false</isDerived>
+        <sortIndex>6</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#7D98B3</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>Sum of Lowest Yearly Earnings</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>lens_6.Sum of Lowest Yearly Earnings</field>
+        <isDerived>false</isDerived>
+        <sortIndex>7</sortIndex>
+    </measures>
+    <measures>
+        <conditionalFormatting>
+            <formattingPredicates>
+                <formatValue>#C6D3E1</formatValue>
+                <operator xsi:nil="true"/>
+                <sortIndex xsi:nil="true"/>
+                <value xsi:nil="true"/>
+            </formattingPredicates>
+            <property>chartColor</property>
+            <referenceField>Sum of Highest Yearly Earnings</referenceField>
+            <sortIndex xsi:nil="true"/>
+            <type>static</type>
+        </conditionalFormatting>
+        <field>lens_6.Sum of Highest Yearly Earnings</field>
+        <isDerived>false</isDerived>
+        <sortIndex>8</sortIndex>
+    </measures>
+    <type>Asset</type>
+    <waveVisualization>Youtube_Statistics</waveVisualization>
+</WaveXmd>
